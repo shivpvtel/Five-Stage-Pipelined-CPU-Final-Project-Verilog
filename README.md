@@ -37,7 +37,6 @@ In the EXE stage, in addition to the operation performed by the ALU, the PC+8 op
 10. **Test Program and Simulation Waveform** - Write a Verilog code that implement the following instructions to verify the correctness of your pipelined CPU design. The code should be used to initialize the instruction memory block. The register file should be all initialized to zeros. In the test program, it is aimed to check the 20 instructions. The main part of the test program is a subroutine in which four 32-bit memory words are summed by a for loop. After returning from the subroutine, the sum is stored in the data memory by a sw instruction. A code pattern that causes pipeline stall is also prepared within the loop. Word address is used to assign the content of each word (a 32-bit instruction). The parenthesized hexadecimal number in the center of each line is the byte address (PC).
 
 <img width="787" alt="Screen Shot 2022-09-21 at 18 56 28" src="https://user-images.githubusercontent.com/81172033/191624500-ac62e4ff-fd8f-4a6e-aef1-5891e524ccd8.png">
-
 <img width="819" alt="Screen Shot 2022-09-21 at 18 56 46" src="https://user-images.githubusercontent.com/81172033/191624517-287d9cae-f851-44c9-9360-aaa008f53dd3.png">
 
 Below is the test data that should be stored in the data memory. Four 32-bit words in the memory will be read by lw instructions. The test program will store a word in the location next to the four words.
